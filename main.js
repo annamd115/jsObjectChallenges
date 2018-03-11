@@ -90,6 +90,7 @@ var countries = [];
         }
     });
   }
+  
 
   div2.innerHTML = "<h3> Challenge2: </h3>" 
   + "<p>Spain: " + spain.length + "</p>"
@@ -97,7 +98,7 @@ var countries = [];
   + "<p>Russia: " + russia.length + "</p>";
 
 
-//   ____________________________CHALLENGE3____________________________
+//____________________________CHALLENGE3____________________________
 
 var div3 = document.getElementById("challenge-3");
 var test3a = {a: 5, b:2, operator: "add"};  //7
@@ -121,11 +122,31 @@ function result(test){
     return(results);
 }
 
-div2.innerHTML = "<h3> Challenge3: </h3>" 
+div3.innerHTML = "<h3> Challenge3: </h3>" 
 + "<p>a) " + result(test3a) + "</p>"
 + "<p>b) " + result(test3b) + "</p>"
 + "<p>c) " + result(test3c) + "</p>"
 + "<p>d) " + result(test3d) + "</p>";
+
+
+//____________________________CHALLENGE4____________________________
+
+var div4 = document.getElementById("challenge-4");
+var names = ['fred', 'barney'];
+var ages = [30,40];
+//Output:  { 'fred': 30, 'barney': 40 }
+var output = {};
+
+//loop through names array
+for (var i = 0; i < names.length; i++){
+    //the counter is also going through ages
+    //sets the value of each iteration of output.names to ages[i]
+    output[names[i]] = ages[i];
+}
+div4.innerHTML += "<h3> Challenge4: </h3>" 
+//method converts a JavaScript value to a JSON string
++ "<p>" + JSON.stringify(output) + "</p>";
+
 
 
 
