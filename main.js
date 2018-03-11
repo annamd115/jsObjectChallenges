@@ -91,9 +91,49 @@ var countries = [];
     });
   }
 
-  div2.innerHTML = "<h3> Challenge2: </h3>" + "<p>Spain: " + spain.length + "</p>"
+  div2.innerHTML = "<h3> Challenge2: </h3>" 
+  + "<p>Spain: " + spain.length + "</p>"
   + "<p>Portugal: " + portugal.length + "</p>"
   + "<p>Russia: " + russia.length + "</p>";
+
+
+//   ____________________________CHALLENGE3____________________________
+
+var div3 = document.getElementById("challenge-3");
+var test3a = {a: 5, b:2, operator: "add"};  //7
+var test3b = {a: 5, b:2, operator: "subtract"}; //3
+var test3c = {a: 5, b:2, operator: "multiply"}; //10
+var test3d = {a: 5, b:2, operator: "divide"}; //2.5
+
+
+function result(test){
+    var results = [];
+    var operator = test.operator;
+    if(operator === 'add'){
+        results.push(test.a + test.b);
+    }else if(operator === 'subtract'){
+        results.push(test.a - test.b);
+    }else if(operator === 'multiply'){
+        results.push(test.a * test.b);
+    }else if(operator === 'divide'){
+        results.push(test.a / test.b);
+    }
+    return(results);
+}
+
+div2.innerHTML = "<h3> Challenge3: </h3>" 
++ "<p>a) " + result(test3a) + "</p>"
++ "<p>b) " + result(test3b) + "</p>"
++ "<p>c) " + result(test3c) + "</p>"
++ "<p>d) " + result(test3d) + "</p>";
+
+
+
+
+
+
+
+
 
 
 
