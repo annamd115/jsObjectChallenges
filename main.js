@@ -48,6 +48,8 @@ div1.innerHTML = "<h3> Challenge1: </h3>" + winnerName;
 
 //____________________________CHALLENGE2____________________________
 
+var div2 = document.getElementById("challenge-2");
+
 var winnerList = [
     {season: '1999-2000', team: 'Real Madrid', country: 'Spain'},
     {season: '2000-2001', team: 'Bayern Munich', country: 'Germany'},
@@ -76,13 +78,24 @@ var countries = [];
   for(var i = 0; i < winnerList.length; i++){
     countries.push(winnerList[i].country);
     var spain = [];
-    var spain = [];
-    var spain = [];
-    for(var j = 0; j < countries.length; j ++){
-
-    }
+    var portugal = [];
+    var russia = [];
+    countries.forEach(function(country){
+        if(country === 'Spain'){
+            spain.push(country)
+        }else if(country === 'Portugal'){
+            portugal.push(country)
+        }else if(country === 'russia'){
+            russia.push(country)
+        }
+    });
   }
-  console.log(countries);
+
+  div2.innerHTML = "<h3> Challenge2: </h3>" + "<p>Spain: " + spain.length + "</p>"
+  + "<p>Portugal: " + portugal.length + "</p>"
+  + "<p>Russia: " + russia.length + "</p>";
+
+
 
 
 
