@@ -147,11 +147,37 @@ div4.innerHTML += "<h3> Challenge4: </h3>"
 //method converts a JavaScript value to a JSON string
 + "<p>" + JSON.stringify(output) + "</p>";
 
+//____________________________CHALLENGE5____________________________
 
+var div5 = document.getElementById("challenge-5");
 
+var candidate5a = {
+    minSalary: 120000
+  };
+let job5a = {
+    maxSalary: 140000
+}
+  //output is true.  this job can hire any minSalary less than $126,000
+  
+var candidate5b = {
+    minSalary: 950000
+  };
+let job5b = {
+    maxSalary: 100000
+}
+  //output is false.  this job can hire any minSalary less than $90,000
 
+function canAfford(candidate, job){
+    if(candidate.minSalary < (job.maxSalary) * .9){
+        return "true";
+    } else{
+        return "false";
+    }
+}
 
-
+div5.innerHTML += "<h3> Challenge5: </h3>" 
++ "<p>a) " + canAfford(candidate5a, job5a) + "</p>"
++ "<p>b) " + canAfford(candidate5b, job5b) + "</p>";
 
 
 

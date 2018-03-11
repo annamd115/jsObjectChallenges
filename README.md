@@ -99,7 +99,7 @@ var ages = [30,40];
 
 
 ### Challenge #5: Strive Matching
-The company Strive is looking for a new developer.  Given a candidates minSalary and a jobs maxSalary determine if the company can affort the candidate.  The Company will only accept candidates that have a minSalary that is at least 10% less than the jobs maxSalary.  If the candidate matches display true otherwise display false.
+The company Strive is looking for a new developer.  Given a candidates minSalary and a jobs maxSalary determine if the company can afford the candidate.  The Company will only accept candidates that have a minSalary that is at least 10% less than the jobs maxSalary.  If the candidate matches display true otherwise display false.
 
 Examples:
 ```
